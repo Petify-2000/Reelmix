@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Reelmix</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Space Grotesk', sans-serif;
+      background: radial-gradient(circle at top left, #ffe600, #ff4081);
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      text-align: center;
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-top: 2rem;
+      background: linear-gradient(90deg, #ff4081, #ff9800);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: slideIn 1s ease forwards;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #444;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 28px;
+      background: #fff;
+      border: 3px solid #222;
+      border-radius: 40px;
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      transition: 0.3s ease;
+    }
+
+    .button:hover {
+      background: #222;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Reelmix 🎬</h1>
+  <p>Create amazing AI-generated videos with your name – it's quick, fun, and magical.</p>
+
+  <a class="button" href="privacy.html">Privacy Policy</a>
+  <a class="button" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Terms of Use</a>
+  <a class="button" href="mailto:petlab6127@gmail.com?subject=Support%20Request%20-%20Reelmix">Support</a>
+
+  <footer>
+    &copy; 2025 Reelmix. All rights reserved.
+  </footer>
+</body>
+</html>
